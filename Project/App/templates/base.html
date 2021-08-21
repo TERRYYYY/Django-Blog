@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog App</title>
+    <title>Just Blog</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
@@ -16,9 +16,10 @@
         .navbar-brand{
             font-size: 25px;
             font-weight: bolder;
+            
         }
     </style>
-<nav class="navbar navbar-expand-lg navbar-dark primary-color" style="box-shadow: 5px 10px solid black;">
+<nav class="navbar navbar-expand-lg navbar-dark primary-color" style="box-shadow: 0 16px 50px solid grey;">
 
   <!-- Navbar brand -->
   <a class="navbar-brand" href="{% url 'home' %}" style="color: black; font-weight:bolder,">JustBlog</a>
@@ -40,10 +41,10 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color: black;">Features</a>
+        <a class="nav-link" href="{% url 'home' %}" style="color: black;">Posts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color: black;">Pricing</a>
+        <a class="nav-link" href="https://www.vox.com/recode" style="color: black;">Trends</a>
       </li>
 
     <!-- Links -->
