@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog App</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--Navbar-->
+    <style>
+        .navbar-brand{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+    </style>
+<nav class="navbar navbar-expand-lg navbar-dark primary-color" style="box-shadow: 5px 10px solid black;">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="{% url 'home' %}" style="color: black; font-weight:bolder,">JustBlog</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation" style="color: black;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}" style="color: black; margin-left: 70px">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: black;">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: black;">Pricing</a>
+      </li>
+
+    <!-- Links -->
+
+    
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+{% block content %}
+{% load static %}
+<!-- Content -->
+{% endblock content %}
+
+<footer class="py-3 bg-grey">
+    <p class="m-0 text-dark text-center ">Copyright &copy; Terry Kariuki August 2021 </p>
+  </footer>
+</body>
+</html>
